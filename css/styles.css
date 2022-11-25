@@ -615,6 +615,11 @@ button {
   transform: translateY(0);
   opacity: 1;
 }
+.operation-hover:focus .operation-item {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 .box {
   padding: 20px 24px;
 
