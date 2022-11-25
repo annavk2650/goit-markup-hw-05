@@ -56,7 +56,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button-text">Замовити послугу</button>
+          <button type="button" data-modal-open class="button-text">Замовити послугу</button>
         </div>
       </section>
       <!-- FEATURE -->
@@ -109,19 +109,48 @@
         <div class="container section-container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="work-list list">
-            <li class="work-item">
-              <img src="./images/laptop.jpg" alt="Працюють на ноутбуці" width="370" height="294" />
+            <li class="work-items">
+              <div class="overlay-item">
+                <img
+                  src="./images/laptop.jpg"
+                  alt="Працюють на ноутбуці"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay-works">
+                  <p class="overlay-work">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
-            <li class="work-item">
-              <img
-                src="./images/smartphone.jpg"
-                alt="Працюють на телефоні та ноутбуці"
-                width="370"
-                height="294"
-              />
+
+            <li class="work-items">
+              <div class="overlay-item">
+                <img
+                  src="./images/smartphone.jpg"
+                  alt="Працюють на телефоні та ноутбуці"
+                  width="370"
+                  height="294"
+                />
+
+                <div class="overlay-works">
+                  <p class="overlay-work">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
-            <li class="work-item">
-              <img src="./images/tablet.jpg" alt="Працюють на планшеті" width="370" height="294" />
+
+            <li class="work-items">
+              <div class="overlay-item">
+                <img
+                  src="./images/tablet.jpg"
+                  alt="Працюють на планшеті"
+                  width="370"
+                  height="294"
+                />
+
+                <div class="overlay-works">
+                  <p class="overlay-work">Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -362,5 +391,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-close" data-modal-close>
+          <svg class="button-close-icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
